@@ -18,10 +18,15 @@ a
 gene <- "Gene X"
 gene
 
-gene * a # try to multiply, it doesn't work -> Key term "non-numeric"
 
 class(a)        # a is a number
 class(gene)     # gene is a string of characters
+
+
+# What happens if i try to this:
+
+gene * a # try to multiply, it doesn't work -> Key term "non-numeric"
+
 
 
 
@@ -108,7 +113,7 @@ class(characters_vct)
 
 as.factor(numbers_vct)        # Turn our numeric vector into factor. Look similar, but new "levels" section
 
-as.factor(characters_vct)     # Turn our character vector into factors
+as.factor(characters_vct)     # Turn our character vector into factors (NOTE alphabetical order)
 
 
 
@@ -126,6 +131,8 @@ levels(factors_vct)
 # you can have factors that don't appear in any sample
 
 factors_vct <- factor(c(10,10,10,20,20,20), levels = c("10", "20", "30"))
+
+factors_vct
 
 
 # important for legends for example, where you want to show that the data could have had another value,
